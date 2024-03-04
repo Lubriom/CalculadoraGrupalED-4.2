@@ -18,11 +18,13 @@ class Main {
             System.out.println("Introduzca un número para activar la función deseada.");
             System.out.println("1. Sumar dos números");
             System.out.println("2. Restar dos números");
-            System.out.println("3. Salir");
+            System.out.println("3. Ecuación de segundo grado");
+            System.out.println("4. Salir");
 
             opcion = scan.nextInt();
             double num1;
             double num2;
+            double num3;
 
             switch (opcion) {
                 case 1:
@@ -42,8 +44,20 @@ class Main {
                     Calculadora.sumar(num1, num2);
                     System.out.println();
                     break;
-
+                    
                 case 3:
+                    System.out.println("Para una ecuación ax2 bx c = 0 ");
+                    System.out.println("Introduce a: ");
+                    num1 = scan.nextDouble();
+                    System.out.println("Introduce b: ");
+                    num2 = scan.nextDouble();
+                    System.out.println("Introduce c: ");
+                    num3 = scan.nextDouble();
+                    Calculadora.ecuacionSegundoGrado(num1, num2,num3);
+                    System.out.println();
+                    break;
+
+                case 4:
                     break;
             }
 
