@@ -39,5 +39,16 @@ public abstract class Calculadora {
         System.out.println("Seno de " + angulo + " es: " + seno);
         System.out.println("Coseno de " + angulo + " es: " + coseno);
         System.out.println("Tangente de " + angulo + " es: " + tangente);
-    }  
+    }
+   
+    public static int multiplicar(int a, int b) {
+        return a * b;
+    }
+    
+    public static double dividir(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("No se puede dividir por cero");
+        }
+        return a / b;
+    }
 }

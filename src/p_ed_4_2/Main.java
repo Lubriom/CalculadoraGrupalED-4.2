@@ -12,7 +12,7 @@ class Main {
 
         Scanner scan = new Scanner(System.in);
         int opcion;
-        
+
         do {
 
             System.out.println("Introduzca un número para activar la función deseada.");
@@ -20,7 +20,9 @@ class Main {
             System.out.println("2. Restar dos números");
             System.out.println("3. Ecuación de segundo grado");
             System.out.println("4. Calcular Sen Cos Tan de un angulo");
-            System.out.println("5. Salir");
+            System.out.println("5. Multiplicación");
+            System.out.println("6. División");
+            System.out.println("7. Salir");
 
             opcion = scan.nextInt();
             double num1;
@@ -45,7 +47,7 @@ class Main {
                     Calculadora.sumar(num1, num2);
                     System.out.println();
                     break;
-                    
+
                 case 3:
                     System.out.println("Para una ecuación ax2 bx c = 0 ");
                     System.out.println("Introduce a: ");
@@ -54,10 +56,10 @@ class Main {
                     num2 = scan.nextDouble();
                     System.out.println("Introduce c: ");
                     num3 = scan.nextDouble();
-                    Calculadora.ecuacionSegundoGrado(num1, num2,num3);
+                    Calculadora.ecuacionSegundoGrado(num1, num2, num3);
                     System.out.println();
                     break;
-                   
+
                 case 4:
                     System.out.println("Para calcular el seno, el coseno y la tangente");
                     System.out.println("Introduzca el angulo");
@@ -67,6 +69,24 @@ class Main {
                     break;
                     
                 case 5:
+                    System.out.println("Para calcular el seno, el coseno y la tangente");
+                    System.out.println("Introduzca el angulo");
+                    num1 = scan.nextDouble();
+                    Calculadora.calcularSenCosTan(num1);
+                    System.out.println();
+                    break;
+                    
+                case 6:
+                    System.out.println("Introduzca el primer numero: ");
+                    num1 = scan.nextInt();
+                    System.out.println("Introduzca el segundo numero: ");
+                    num2 = scan.nextInt();
+                    Calculadora.multiplicar(num1, num2);
+                    System.out.println();
+                    break;
+
+                case 6:
+                    
                     break;
             }
 
