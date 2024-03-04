@@ -10,15 +10,15 @@ package p_ed_4_2;
  */
 public abstract class Calculadora {
 
-    public static void sumar(double numero1, double numero2) {
-        System.out.println("La suma de los números es: " + numero1 + numero2);
+    public static void sumar(double angulo1, double angulo2) {
+        System.out.println("La suma de los números es: " + angulo1 + angulo2);
     }
 
-    public static void restar(double numero1, double numero2) {
-        System.out.println("La resta de los números es: " + (numero1 - numero2));
+    public static void restar(double angulo1, double angulo2) {
+        System.out.println("La resta de los números es: " + (angulo1 - angulo2));
     }
     
-     public static void ecuacionSegundoGrado(double a, double b, double c) {
+    public static void ecuacionSegundoGrado(double a, double b, double c) {
 
         if ((Math.pow(b, 2) - 4 * a * c) < 0) {
             System.err.println("No tiene soluciones reales");
@@ -30,4 +30,14 @@ public abstract class Calculadora {
                             (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a));
         }
     }
+    
+    public static void calcularSenCosTan(double angulo){
+        double seno = Math.sin(angulo);
+        double coseno = Math.cos(angulo);
+        double tangente = Math.tan(angulo);
+
+        System.out.println("Seno de " + angulo + " es: " + seno);
+        System.out.println("Coseno de " + angulo + " es: " + coseno);
+        System.out.println("Tangente de " + angulo + " es: " + tangente);
+    }  
 }

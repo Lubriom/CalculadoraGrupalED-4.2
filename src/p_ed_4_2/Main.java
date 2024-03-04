@@ -19,7 +19,8 @@ class Main {
             System.out.println("1. Sumar dos números");
             System.out.println("2. Restar dos números");
             System.out.println("3. Ecuación de segundo grado");
-            System.out.println("4. Salir");
+            System.out.println("4. Calcular Sen Cos Tan de un angulo");
+            System.out.println("5. Salir");
 
             opcion = scan.nextInt();
             double num1;
@@ -56,8 +57,16 @@ class Main {
                     Calculadora.ecuacionSegundoGrado(num1, num2,num3);
                     System.out.println();
                     break;
-
+                   
                 case 4:
+                    System.out.println("Para calcular el seno, el coseno y la tangente");
+                    System.out.println("Introduzca el angulo");
+                    num1 = scan.nextDouble();
+                    Calculadora.calcularSenCosTan(num1);
+                    System.out.println();
+                    break;
+                    
+                case 5:
                     break;
             }
 
