@@ -69,28 +69,31 @@ class Main {
                     break;
                     
                 case 5:
-                    System.out.println("Para calcular el seno, el coseno y la tangente");
-                    System.out.println("Introduzca el angulo");
-                    num1 = scan.nextDouble();
-                    Calculadora.calcularSenCosTan(num1);
+                    System.out.println("Introduzca el primer numero: ");
+                    int numero1 = scan.nextInt();
+                    System.out.println("Introduzca el segundo numero: ");
+                    int numero2 = scan.nextInt();
+                    System.out.println("Resultado de la multiplicacion: " + 
+                            Calculadora.multiplicar(numero1, numero2));
                     System.out.println();
                     break;
                     
                 case 6:
                     System.out.println("Introduzca el primer numero: ");
-                    num1 = scan.nextInt();
+                    num1 = scan.nextDouble();
                     System.out.println("Introduzca el segundo numero: ");
-                    num2 = scan.nextInt();
-                    Calculadora.multiplicar(num1, num2);
+                    num2 = scan.nextDouble();
+                    System.out.println("Resultado de la division: " + 
+                            Calculadora.dividir(num1, num2));
                     System.out.println();
                     break;
 
-                case 6:
+                case 7:
                     
                     break;
             }
 
-        } while (opcion != 3);
+        } while (opcion != 8);
 
     }
 }
