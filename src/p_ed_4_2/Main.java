@@ -46,7 +46,7 @@ class Main {
                     num1 = scan.nextDouble();
                     System.out.println("Introduce el número a restar: ");
                     num2 = scan.nextDouble();
-                    Calculadora.sumar(num1, num2);
+                    Calculadora.restar(num1, num2);
                     System.out.println();
                     break;
 
