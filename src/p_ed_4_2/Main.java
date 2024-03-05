@@ -22,7 +22,9 @@ class Main {
             System.out.println("4. Calcular Sen Cos Tan de un angulo");
             System.out.println("5. Multiplicación");
             System.out.println("6. División");
-            System.out.println("7. Salir");
+            System.out.println("7. Raíz");
+            System.out.println("8. Potencia");
+            System.out.println("9. Salir");
 
             opcion = scan.nextInt();
             double num1;
@@ -89,7 +91,21 @@ class Main {
                     break;
 
                 case 7:
+                    System.out.println("Introduzca el primer número");
+                    num1 = scan.nextDouble();
+                    System.out.println("El resultado de la raíz cuadrada es: " + Calculadora.raizCuadrada(num1));
+                    System.out.println();
+                    break;
+                case 8:
+                    System.out.println("Introduzca la base: ");
+                    num1 = scan.nextDouble();
+                    System.out.println("Introduzca el exponente: ");
+                    num2 = scan.nextDouble();
+                    System.out.println("El resultado es: " + Calculadora.potencia(num1, num2));
+                    System.out.println();
                     
+                    break;
+                case 9: 
                     break;
             }
 

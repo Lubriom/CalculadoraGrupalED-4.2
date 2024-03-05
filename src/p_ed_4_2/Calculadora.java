@@ -51,4 +51,13 @@ public abstract class Calculadora {
         }
         return a / b;
     }
+    
+    public static double raizCuadrada(double num) {
+        return Math.sqrt(num);
+    }
+    
+    public static double potencia(double base, double exponente) {
+        return Math.pow(base, exponente);
+    }
+    
 }
