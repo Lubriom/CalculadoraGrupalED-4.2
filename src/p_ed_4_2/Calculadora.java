@@ -10,12 +10,12 @@ package p_ed_4_2;
  */
 public abstract class Calculadora {
 
-    public static void sumar(double angulo1, double angulo2) {
-        System.out.println("La suma de los números es: " + angulo1 + angulo2);
+    public static void sumar(double num1, double num2) {
+        System.out.println("La suma de los números es: " + (num1 + num2));
     }
 
     public static void restar(double angulo1, double angulo2) {
-        System.out.println("La resta de los números es: " + (angulo1 - angulo2));
+        System.out.println("La resta de los números es: " + (num1 - num2));
     }
     
     public static void ecuacionSegundoGrado(double a, double b, double c) {
